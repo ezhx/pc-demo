@@ -4,9 +4,23 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <a-button type="primary">
+      Primary
+    </a-button>
+    <a-rate v-model="value" />
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      value: 2
+    }
+  }
+}
+</script>
 
 <style lang="less">
 #app {
