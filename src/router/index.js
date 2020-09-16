@@ -5,9 +5,24 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '*',
+    redirect: '/'
+  },
+  {
+    name: 'login',
+    path: '/login',
+    component: () => import('../views/login'),
+    meta: {
+      keepAlive: false
+    }
+  },
+  {
+    name: 'index',
     path: '/',
-    name: 'Index',
-    component: () => import('../views/index/index.vue')
+    component: () => import('../views/index'),
+    meta: {
+      keepAlive: false
+    }
   }
 ]
 
