@@ -10,16 +10,13 @@
 <script>
 // import './App.less'
 export default {
-  data() {},
+  data() {
+    return {}
+  },
   mounted: function() {
     this.$rs.test()
   }
 }
 </script>
 
-<style lang="less" scoped src="./App.less">
-div {
-  background-color: #f00;
-  font-size: 3px;
-}
-</style>
+<style lang="less" scoped></style>
