@@ -27,8 +27,20 @@ module.exports = {
       }
     }
   },
-
   configureWebpack: {
     plugins: [new AntDesignThemePlugin(options)]
+  },
+  // devSere跨域
+  devServer: {
+    open: true,
+    proxy: {
+      '^/api': {
+        target: 'http://www.ch64.cn',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
   }
 }

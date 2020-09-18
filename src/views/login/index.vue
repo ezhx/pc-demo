@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="login-container">
     <a-button type="primary">
       测试
     </a-button>
@@ -14,4 +14,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="less">
+#app {
+  height: 100%;
+}
+</style>
+
+<style lang="less" scoped>
+@import './index.less';
+</style>

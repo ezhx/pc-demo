@@ -2,7 +2,7 @@
  * @Author: hx
  * @Date: 2020-09-16 14:54:05
  * @Last Modified by: hx
- * @Last Modified time: 2020-09-18 10:07:06
+ * @Last Modified time: 2020-09-18 14:18:28
  * @des:ant-design-vue文件
  */
 import Vue from 'vue'
@@ -18,5 +18,7 @@ import Vue from 'vue'
 // Vue.component('a-button', Button)//Vue.use(Button)
 
 // 按需引入(需配置babel>babel-plugin-import,无需引入样式)
-import {Button} from 'ant-design-vue'
+import {Button, Row, Col} from 'ant-design-vue'
 Vue.component(Button.name, Button)
+Vue.component(Row.name, Row)
+Vue.component(Col.name, Col)
