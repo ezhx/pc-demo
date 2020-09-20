@@ -11,6 +11,7 @@
   "bracketSpacing": false,
   "jsxBracketSameLine": true,
   "useTabs": false,
+  "endOfLine": "lf",
   "overrides": [{
       "files": ".prettierrc",
       "options": {
